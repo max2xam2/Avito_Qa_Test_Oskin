@@ -6,12 +6,12 @@ public class AnnouncmentPojo {
   public String name;
   public Integer price;
   public Integer sellerId;
-  public Statistics statistics;
+  public StatisticsPojo statistics;
 
   public AnnouncmentPojo() {
   }
 
-  public AnnouncmentPojo(Integer sellerId, String name, Integer price, Statistics statistics) {
+  public AnnouncmentPojo(Integer sellerId, String name, Integer price, StatisticsPojo statistics) {
     this.sellerId = sellerId;
     this.price = price;
     this.name = name;
@@ -19,7 +19,7 @@ public class AnnouncmentPojo {
 
   }
 
-  public AnnouncmentPojo(String createdAt, String id, String name, Integer price, Integer sellerId, Statistics statistics) {
+  public AnnouncmentPojo(String createdAt, String id, String name, Integer price, Integer sellerId, StatisticsPojo statistics) {
     this.createdAt = createdAt;
     this.id = id;
     this.name = name;
@@ -48,7 +48,7 @@ public class AnnouncmentPojo {
     return sellerId;
   }
 
-  public Statistics getStatistics() {
+  public StatisticsPojo getStatistics() {
     return statistics;
   }
 
@@ -72,7 +72,7 @@ public class AnnouncmentPojo {
     this.sellerId = sellerId;
   }
 
-  public void setStatistics(Statistics statistics) {
+  public void setStatistics(StatisticsPojo statistics) {
     this.statistics = statistics;
   }
 }

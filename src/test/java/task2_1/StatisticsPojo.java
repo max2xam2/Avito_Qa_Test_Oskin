@@ -1,14 +1,14 @@
 package task2_1;
 
-public class Statistics {
+public class StatisticsPojo {
   public Integer contacts;
   public Integer likes;
   public Integer viewCount;
 
-  public Statistics() {
+  public StatisticsPojo() {
   }
 
-  public Statistics(Integer contacts, Integer likes, Integer viewCount) {
+  public StatisticsPojo(Integer contacts, Integer likes, Integer viewCount) {
     this.contacts = contacts;
     this.likes = likes;
     this.viewCount = viewCount;
